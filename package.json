@@ -1,12 +1,14 @@
 {
   "name": "my-project",
-  "private": true,
   "version": "0.0.0",
+  "homepage": "https://GunjanMalviya28.github.io/PasswordGenerator",
+  "private": false,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+      "deploy": "git add . && git commit -m \"Deploy to GitHub Pages\" && git push origin master && git subtree push --prefix dist origin gh-pages",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -28,3 +30,4 @@
     "vite": "^5.2.0"
   }
 }
+
